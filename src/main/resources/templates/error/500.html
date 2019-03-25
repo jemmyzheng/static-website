@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="fragment/index :: head ('Anonymous crawler | ProxyCrawl')"></head>
+<body class="error ">
+<header class="header-bar" th:replace="fragment/index :: header (false)"></header>
+<div class="info-box colored">
+  <div class="grid-container">
+    <div class="grid-x mtxxl">
+      <div class="cell text-center">
+        <h2>Ups! Internal Server Error </h2>
+      </div>
+    </div>
+    <div class="grid-x mtxxl align-middle text-center">
+      <div class="cell">
+        <p>Sorry. Our engineers are repairing.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer" th:replace="fragment/index :: footer"></footer>
+<script src="/assets/js/main.js" async></script>
+</body>
+</html>

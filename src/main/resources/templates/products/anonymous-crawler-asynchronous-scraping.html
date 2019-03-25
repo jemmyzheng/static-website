@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="fragment/index :: head ('ProxyCrawl Crawler Scraper - Anonymous crawler proxy')"></head>
+<body class="crawler landing-main api-crawler">
+<header class="header-bar" th:replace="fragment/index :: header (true)"></header>
+<main>
+  <section class="info-box hero">
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="small-12 medium-7 cell content-container">
+          <div class="grid-x">
+            <div class="small-10 small-offset-1 medium-offset-0 cell">
+              <h1 class="text-center medium-text-left">The most advanced Crawling system for your
+                <span class="js-carousel-text" data-text="business|industry|clients|web scraper|scraping projects|web application|SEO analytics|recruitment automation|marketing growth|data cluster|amazon products|SERP rankings">business</span>
+              </h1>
+            </div>
+            <div class="small-12 cell">
+              <form class="hero-form mtxl" action="/signup">
+                <div class="grid-x">
+                  <div class="small-7 cell"><input type="text" name="email" placeholder="Email address"></div>
+                  <div class="small-5 cell"><input type="hidden" name="signup" value="crawler">
+                    <button class="button large cta cta-signup bold">Create free account</button>
+                  </div>
+                  <div class="small-12 cell">Try it free. No credit card required. Instant set-up.</div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-5 cell text-center show-for-medium">
+          <img
+            src="/assets/images/scraper-crawler-cloud-b7ac382a49.png"
+            srcset="/assets/images/scraper-crawler-cloud-b7ac382a49.png 1x, /assets/images/scraper-crawler-cloud@2x-7f0b5f0e43.png 2x"
+            alt="Crawler and scraper">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info-box domains-hidden">
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="small-offset-1 small-10 medium-offset-0 medium-12 cell">
+          <h2 class="main-subtitle text-center">Crawling big data for your business needs</h2>
+        </div>
+        <div class="cell text-center">
+          <p class="mtl">
+            Easily add crawled data to your products without managing proxies,
+            infrastructure, queues, captchas, blocks, etc.
+          </p>
+          <p class="mtl">Push website urls as required and receive crawled data to your desired webhook endpoint.</p>
+          <p class="mtl">
+            We handle all queues and schedulers for you. Just call the asynchronous API and start getting scraping data.
+          </p>
+          <p class="mtl">We literally support millions of different websites.</p>
+        </div>
+        <div class="small-6 medium-4 cell mtxxl">
+          <ul class="domain-list">
+            <li><a href="/how-to-scrape-facebook" title="How to scrape Facebook pages">facebook.com</a></li>
+            <li>baidu.com</li>
+            <li><a href="/how-to-scrape-yahoo" title="How to scrape Yahoo search results">yahoo.com</a></li>
+            <li>wikipedia.org</li>
+            <li>youtube.com</li>
+            <li>qq.com</li>
+            <li>taobao.com</li>
+            <li><a href="/how-to-scrape-amazon" title="How to scrape Amazon products and listings">amazon.com</a></li>
+            <li>live.com</li>
+            <li>vk.com</li>
+            <li><a href="/how-to-scrape-twitter" title="How to scrape Twitter tweets and profiles">twitter.com</a></li>
+            <li>hao123.com</li>
+            <li>instagram.com</li>
+            <li>sohu.com</li>
+            <li>sina.com.cn</li>
+            <li>360.cn</li>
+            <li><a href="/how-to-scrape-stackoverflow" title="How to scrape Stackoverflow questions">stackoverflow.com</a></li>
+            <li>netflix.com</li>
+            <li><a href="/how-to-scrape-tripadvisor" title="How to scrape Tripadvisor reviews, attractions and businesses">tripadvisor.com</a></li>
+            <li>amazon.co.jp</li>
+            <li>imgur.com</li>
+            <li>imdb.com</li>
+            <li>cnzz.com</li>
+            <li>pinterest.com</li>
+            <li>office.com</li>
+            <li>indeed.com</li>
+            <li>bitauto.com</li>
+          </ul>
+        </div>
+        <div class="small-6 medium-4 cell mtxxl">
+          <ul class="domain-list">
+            <li><a href="/how-to-scrape-github" title="How to scrape Github profiles and repositories">github.com</a></li>
+            <li>cnn.com</li>
+            <li>fc2.com</li>
+            <li>dropbox.com</li>
+            <li>pixnet.net</li>
+            <li>amazon.de</li>
+            <li>blogger.com</li>
+            <li>alibaba.com</li>
+            <li>wikia.com</li>
+            <li>twitch.tv</li>
+            <li>producthunt.com</li>
+            <li>amazon.in</li>
+            <li>so.com</li>
+            <li>nytimes.com</li>
+            <li>ask.com</li>
+            <li>bbc.com</li>
+            <li>360.com</li>
+            <li>savefrom.net</li>
+            <li>craigslist.org</li>
+            <li>haosou.com</li>
+            <li>whatsapp.com</li>
+            <li>amazon.co.uk</li>
+            <li>bbc.co.uk</li>
+            <li>vice.com</li>
+            <li>tribunnews.com</li>
+            <li>stackexchange.com</li>
+            <li>rakuten.co.jp</li>
+          </ul>
+        </div>
+        <div class="small-offset-1 small-10 medium-offset-0 medium-4 cell mtxxl">
+          <ul class="domain-list">
+            <li>tmall.com</li>
+            <li>weibo.com</li>
+            <li><a href="/how-to-scrape-yandex" title="How to scrape Yandex search results">yandex.ru</a></li>
+            <li>yahoo.co.jp</li>
+            <li><a href="/how-to-scrape-reddit" title="How to scrape Reddit Posts and Subreddits">reddit.com</a></li>
+            <li><a href="/how-to-scrape-ebay" title="How to scrape Ebay products">ebay.com</a></li>
+            <li><a href="/how-to-scrape-bing" title="How to scrape Bing SERP">bing.com</a></li>
+            <li><a href="/how-to-scrape-aliexpress" title="How to scrape Aliexpress products">aliexpress.com</a></li>
+            <li>msn.com</li>
+            <li>wordpress.com</li>
+            <li>blogspot.com</li>
+            <li>tumblr.com</li>
+            <li>espn.com</li>
+            <li>dailymotion.com</li>
+            <li>zhihu.com</li>
+            <li>ebay.de</li>
+            <li>vimeo.com</li>
+            <li>soundcloud.com</li>
+            <li>ebay.co.uk</li>
+            <li><a href="/how-to-scrape-booking" title="How to scrape Booking reviews and hotel listings">booking.com</a></li>
+            <li><a href="/how-to-scrape-quora" title="How to scrape Quora questions and answers">quora.com</a></li>
+            <li>dailymail.co.uk</li>
+            <li>huffingtonpost.com</li>
+            <li>theguardian.com</li>
+            <li>deviantart.com</li>
+            <li>csdn.net</li>
+            <li>cnet.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="shadow-separator darker"></div>
+  </section>
+  <section class="info-box colored-blue">
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="cell text-center mtxl">
+          <h3>Built on top of the Crawling API</h3>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x mtxxl mbxxl">
+        <div class="medium-5 center cell text-center medium-text-left">
+          <p>
+            ProxyCrawl Crawler, works asynchronously on top of the
+            <a class="bold" href="/scraping-api-avoid-captchas-blocks" title="ProxyCrawl crawler API">Crawling API</a>,
+            so you won’t lose any functionality by using Crawler to scrape worldwide websites.
+          </p>
+          <p>Create a free account and start scraping straight away.</p>
+          <a class="button cta large mtm bold" href="/signup?signup=crawler" title="Create crawler account">Create a free account</a>
+        </div>
+        <div class="small-10 small-offset-1 medium-6 medium-offset-0 cell">
+          <img src="/assets/images/api-crawler-scraper-98a08d0c0e.png"
+            srcset="/assets/images/api-crawler-scraper-98a08d0c0e.png 1x, /assets/images/api-crawler-scraper@2x-28be12e6fc.png 2x"
+            alt="Scraping API and Crawling">
+        </div>
+      </div>
+    </div>
+    <img class="clouds-large" src="/assets/images/clouds-bottom-large-e8050fb410.png"
+         srcset="/assets/images/clouds-bottom-large-e8050fb410.png 1x, /assets/images/clouds-bottom-large@2x-f277d93776.png 2x"
+         alt="Cloud scraping servers" width="100%">
+  </section>
+  <section class="info-box">
+    <div class="grid-container">
+      <div class="grid-x mtxxl">
+        <div class="cell text-center"><h4>We provide you with valid scraping data</h4></div>
+      </div>
+      <div class="grid-x mtxxl">
+        <div class="medium-5 cell center text-center medium-text-left">
+          <p>
+            By using our network of worldwide private
+            proxies, artificial intelligence and our team of engineers, Crawler will make sure to provide you only with valid data 24/7.
+          </p>
+          <p class="mtl">We care for your business success.</p>
+        </div>
+        <div class="small-10 small-offset-1 medium-3 medium-offset-0 cell center">
+          <img src="/assets/images/scraping-website-data-6853d81d86.jpg"
+               srcset="/assets/images/scraping-website-data-6853d81d86.jpg 1x, /assets/images/scraping-website-data@2x-cbf99a926a.jpg 2x"
+               alt="Website data extractor">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info-box">
+    <div class="grid-container">
+      <div class="grid-x mtxxl">
+        <div class="cell text-center"><h4>On demand scraping data delivery</h4></div>
+      </div>
+      <div class="grid-x mtxxl">
+        <div class="medium-5 cell center text-center medium-text-left">
+          <p>You provide a webhook endpoint and the scraping data will be delivered there with your total control.</p>
+          <p class="mtl">Pause and resume your ProxyCrawl crawlers based on your business budget and needs.</p>
+        </div>
+        <div class="medium-5 cell center">
+          <img src="/assets/images/website-scraping-5013660e81.png"
+               srcset="/assets/images/website-scraping-5013660e81.png 1x, /assets/images/website-scraping@2x-40728da79a.png 2x"
+               alt="Website Scraping and Crawling">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info-box text-center mtxxl">
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="small-10 medium-8 center cell"><h5>Price scales with your business requirements</h5></div>
+      </div>
+    </div>
+  </section>
+  <div class="clouds-separator negative">
+    <img src="/assets/images/clouds-separator-b29eea9bd7.png"
+         srcset="/assets/images/clouds-separator-b29eea9bd7.png 1x, /assets/images/clouds-separator@2x-5ae5ec66f9.png 2x"
+         alt="Cloud servers" width="100%">
+  </div>
+  <a id="pricing"></a>
+  <section class="info-box clouds-container">
+    <div class="grid-container grid-container-padded">
+      <div class="grid-x align-middle mtxl">
+        <div class="small-offset-1 small-10 medium-offset-1 medium-4 cell text-center medium-text-left">
+          <h6>Simple pricing</h6>
+          <p>For medium and big projects without hidden fees</p>
+          <h6 class="mtm">No long-term contracts</h6>
+          <p>Pause at any time and come back later when you need to crawl again</p>
+          <h6 class="mtm">Only pay for success</h6>
+          <p>You will only pay for successful requests</p>
+        </div>
+        <div class="medium-offset-1 medium-6 cell image">
+          <div class="price-calc pam">
+            <h5>Monthly pricing calculator</h5>
+            <span>How many pages do you plan to crawl each month?</span>
+            <ul class="tabs mtm" id="pricing-tabs" data-tabs="data-tabs">
+              <li class="tabs-title left-tab is-active"><a href="#regular" aria-selected="true">Regular pages</a></li>
+              <li class="tabs-title right-tab"><a href="#javascript">Javascript pages</a></li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="pricing-tabs">
+              <div class="tabs-panel is-active" id="regular">
+                <div class="pricing-tooltip">Input your estimated number</div>
+                <input class="requests-input js-input-number" id="regular-input" type="text"
+                       placeholder="Enter regular requests monthly volume" autocomplete="off" maxlength="15"/>
+                <table id="regular-table">
+                  <thead>
+                  <tr>
+                    <th>Successful Requests</th>
+                    <th class="text-right">Price per request</th>
+                    <th class="text-right">Total price</th>
+                  </tr>
+                  </thead>
+                  <tbody class="pricing-rows">
+                  <tr>
+                    <td>0 - 1,000</td>
+                    <td class="text-right">0.3¢</td>
+                    <td class="text-right row-price">$0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Next 10,000</td>
+                    <td class="text-right">0.2¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>Next 100,000</td>
+                    <td class="text-right">0.06¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>Next 1,000,000</td>
+                    <td class="text-right">0.05¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>Next 10,000,000</td>
+                    <td class="text-right">0.01¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>Next 100,000,000</td>
+                    <td class="text-right">0.005¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>Next 1,000,000,000</td>
+                    <td class="text-right">0.004¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>After 1,000,000,000</td>
+                    <td class="text-right">0.002¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tabs-panel" id="javascript">
+                <div class="pricing-tooltip">Input your estimated number</div>
+                <input class="requests-input js-input-number" id="javascript-input" type="text"
+                       placeholder="Enter javascript requests monthly volume" autocomplete="off" maxlength="15"/>
+                <table id="javascript-table">
+                  <thead>
+                  <tr>
+                    <th>Successful Requests</th>
+                    <th class="text-right">Price per request</th>
+                    <th class="text-right">Total price</th>
+                  </tr>
+                  </thead>
+                  <tbody class="pricing-rows">
+                  <tr>
+                    <td>0 - 1,000</td>
+                    <td class="text-right">0.6¢</td>
+                    <td class="text-right row-price">$0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Next 10,000</td>
+                    <td class="text-right">0.4¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>Next 100,000</td>
+                    <td class="text-right">0.12¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>Next 1,000,000</td>
+                    <td class="text-right">0.1¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>Next 10,000,000</td>
+                    <td class="text-right">0.02¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>Next 100,000,000</td>
+                    <td class="text-right">0.01¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>Next 1,000,000,000</td>
+                    <td class="text-right">0.008¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  <tr>
+                    <td>After 1,000,000,000</td>
+                    <td class="text-right">0.004¢</td>
+                    <td class="text-right row-price"></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="grid-x mts mbs prs">
+              <div class="small-6 medium-4 cell">Regular pages</div>
+              <div class="small-6 medium-8 cell text-right" id="regular-total">$0.00</div>
+            </div>
+            <div class="grid-x mts mbs prs">
+              <div class="small-6 medium-4 cell">Javascript pages</div>
+              <div class="small-6 medium-8 cell text-right" id="javascript-total">$0.00</div>
+            </div>
+            <div class="grid-x mts mbs total-cost">
+              <div class="small-6 medium-4 cell total-cost-label">Total cost:</div>
+              <div class="small-6 medium-8 cell text-right">
+                <div class="total-cost-number" id="grand-total">$0.00</div>
+              </div>
+            </div>
+            <div class="grid-x">
+              <div class="small-12 cell tax-text"><span class="float-right">Taxes may apply for EU residents</span><span
+                  class="float-left show-for-medium">You only pay for successful requests</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section th:replace="fragment/index :: section-mtxxl" class="info-box mtxxl"></section>
+  <section th:replace="fragment/index :: section-mtm" class="last-cta mtm"></section>
+</main>
+<footer class="footer" th:replace="fragment/index :: footer"></footer>
+<script src="/assets/js/main.js" async></script>
+</body>
+</html>

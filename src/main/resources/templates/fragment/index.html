@@ -1,0 +1,144 @@
+<head th:fragment="head (title)">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:text="${title}">Proxy Crawl - Anonymous crawler proxy</title>
+  <meta property="og:title" th:attr="content=${title}">
+  <meta name="description"
+        content="ProxyCrawl stay anonymous while crawling the web, web crawling protection the way it should be">
+  <meta property="og:description"
+        content="ProxyCrawl stay anonymous while crawling the web, web crawling protection the way it should be">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://proxycrawl.com/assets/images/open-graph-f038ec05ba.jpg">
+  <meta property="og:url" content="https://proxycrawl.com">
+  <meta property="og:site_name" content="ProxyCrawl">
+  <meta http-equiv="content-language" content="en">
+  <link rel="stylesheet" charset="utf-8" media="screen" type="text/css" href="/assets/css/style.css">
+  <link rel="stylesheet" charset="utf-8" media="screen" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-16-0bdda373d5.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32-b26e18e26d.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/images/favicon-apple-180-47e075ee3d.png" sizes="180x180">
+  <meta name="msapplication-TileColor" content="#55679d">
+</head>
+
+<header th:fragment="header (hasPricing)" class="header-bar">
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <a href="/">
+        <img class="logo"
+             src="/assets/images/logo-header-a5c76faee5.png"
+             srcset="/assets/images/logo-header-a5c76faee5.png 1x, /assets/images/logo-header@2x-0f0688a36f.png 2x"
+             alt="Proxy Crawl" data-link="/">
+      </a>
+    </div>
+    <nav class="top-bar-right" aria-label="Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <ul class="menu">
+        <li class="products-menu" id="products-menu">
+          <a href="#" title="Proxy Crawl products" itemprop="url">Products</a>
+          <div class="submenu" id="products-submenu">
+            <ul class="mts">
+              <li>
+                <a href="/scraping-api-avoid-captchas-blocks" title="Crawling API" itemprop="url">
+                  <strong>Crawling API</strong>
+                  <p class="mts">Easy to use API built from developers to developers.</p>
+                </a>
+              </li>
+              <li>
+                <a href="/anonymous-crawler-asynchronous-scraping" title="Crawler" itemprop="url">
+                  <strong>Crawler</strong>
+                  <p class="mts">For large scale projects that require large amounts of data.</p>
+                </a>
+              </li>
+              <li>
+                <a href="/scraping-with-worldwide-backconnect-proxy" title="Backconnect Proxy" itemprop="url">
+                  <strong>Backconnect Proxy</strong>
+                  <p class="mts">For use in apps that require a proxy.</p>
+                </a>
+              </li>
+            </ul>
+            <div class="clouds-wrapper">
+              <img class="clouds"
+                   src="/assets/images/clouds-bottom-small-87049d23b7.jpg"
+                   srcset="/assets/images/clouds-bottom-small-87049d23b7.jpg 1x, /assets/images/clouds-bottom-small@2x-8433f1ed2c.jpg 2x"
+                   alt="Scraping and crawling servers" width="100%">
+            </div>
+          </div>
+        </li>
+        <li th:if="${hasPricing}"><a href="#pricing" title="Proxy Crawl pricing" itemprop="url">Pricing</a></li>
+        <li><a href="/contact" title="Contact Proxy Crawl" itemprop="url">Contact</a></li>
+        <li><a href="/about-us" title="About ProxyCrawl" itemprop="url" rel="nofollow">About</a></li>
+        <li><a href="/login" title="Login to Proxy Crawl" itemprop="url">Login</a></li>
+        <li>
+          <a class="button cta" href="/signup?signup=index" title="Sign up to Proxy Crawl" itemprop="url">Try it free</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section th:fragment="section-mtm" class="last-cta mtm">
+  <div class="last-cta-background show-for-medium"></div>
+  <div class="grid-x">
+    <div class="last-cta-box medium-6 cell center">
+      <div class="grid-x">
+        <div class="small-10 medium-8 cell center">
+          <h6>Start crawling the web today</h6>
+          <form class="last-cta-form mtm" action="/signup">
+            <div class="grid-x">
+              <div class="small-7 cell">
+                <input type="text" name="email" placeholder="Email address">
+              </div>
+              <div class="small-5 cell">
+                <button class="button large cta cta-signup bold" href="/signup?signup=index" title="Create free proxy account">Create free account</button>
+              </div>
+              <div class="small-12 cell">Try it free. No credit card required. Instant set-up.</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section th:fragment="section-mtxxl" class="info-box mtxxl">
+  <div class="grid-x">
+    <div class="cell text-center">
+      <h5>Supporting all kind of crawling projects</h5>
+      <p class="mtxl">Trusted by the world’s most innovative businesses – big and small;</p>
+      <p>Which crawled <span id="requests-count">831,923</span> unique pages anonymously</p>
+      <ul class="client-logos mtxxl">
+        <li>
+          <img src="/assets/images/clients/shopify-logo-7fc7bb4dfd.jpg" alt="Shopify scraping" width="180" height="380">
+        </li>
+        <li>
+          <img src="/assets/images/clients/expedia-logo-5c4cc5eb7f.jpg" alt="Expedia scraping" width="180" height="380">
+        </li>
+        <li class="show-for-medium">
+          <img src="/assets/images/clients/hm-logo-166a0f19a8.jpg" alt="H&amp;M scraping" width="180" height="380">
+        </li>
+        <li>
+          <img src="/assets/images/clients/pinter-logo-193b791079.jpg" alt="Pinterest scraping" width="180" height="380">
+        </li>
+        <li class="show-for-medium">
+          <img src="/assets/images/clients/zurich-logo-6216a579a7.jpg" alt="Zurich scraping" width="180" height="380">
+        </li>
+        <li class="show-for-large">
+          <img src="/assets/images/clients/nike-logo-fa707eda41.jpg" alt="Nike scraping" width="180" height="380">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer th:fragment="footer" class="footer">
+  <div class="grid-x">
+    <div class="cell text-center">
+      <small>©2019 ProxyCrawl
+        - <a href="https://blog.proxycrawl.com" title="ProxyCrawl Blog and Articles">blog</a>
+        - <a href="/terms" target="_blank" title="ProxyCrawl Terms and conditions" rel="nofollow">terms and
+          conditions</a>
+        - <a href="/privacy" target="_blank" title="ProxyCrawl Privacy policy" rel="nofollow">privacy policy</a>
+        - <a href="/about-us" title="ProxyCrawl About Us" rel="nofollow">about us</a>
+      </small>
+    </div>
+  </div>
+</footer>

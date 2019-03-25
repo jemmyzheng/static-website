@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="fragment/index :: head ('Contact us | Proxy Crawl - Anonymous crawler proxy')"></head>
+<body class="contact ">
+<header class="header-bar" th:replace="fragment/index :: header (false)"></header>
+<main>
+  <section class="text-center mtxxl">
+    <div class="grid-x">
+      <div class="small-12 cell"><h1>Contact us</h1>
+        <h3>Fill the form to get in touch with us</h3></div>
+    </div>
+  </section>
+  <section th:if="${!contacted}" class="info-box">
+    <div class="grid-container">
+      <form class="contact-form" id="contact-form" method="POST" novalidate>
+        <div class="grid-x">
+          <div class="small-12 medium-8 medium-offset-2 cell">
+            <div class="grid-x grid-margin-x">
+              <div class="small-12 medium-4 cell">
+                <input type="text" placeholder="Name" name="name" id="name" required minlength="3">
+                <span class="form-error" data-form-error-for="name">Name is required</span>
+              </div>
+              <div class="small-12 medium-4 cell">
+                <input type="email" placeholder="Email" name="email" id="email" required minlength="5">
+                <span class="form-error" data-form-error-for="email">Email is required</span>
+              </div>
+              <div class="small-12 medium-4 cell">
+                <label>
+                  <select name="product" required>
+                    <option value="">Select product</option>
+                    <option value="api">Crawling API</option>
+                    <option value="crawler">Crawler</option>
+                    <option value="proxy">Proxy Backconnect</option>
+                  </select>
+                  <span class="form-error" data-form-error-for="email">Please select a product</span>
+                </label>
+              </div>
+              <div class="small-12 cell">
+                <textarea name="message" id="message" placeholder="How can we help?" rows="5" required minlength="5"></textarea>
+                <span class="form-error" data-form-error-for="message">Message is required</span>
+              </div>
+              <div class="small-12 cell">
+                <div class="js-cool-checkbox cool-checkbox">
+                  <span class="off active">No</span>
+                  <span class="on">Yes!</span>
+                  <input id="val" type="checkbox" name="val">
+                  <label class="bold">Are you a human?</label>
+                </div>
+              </div>
+            </div>
+            <div class="grid-x mtm">
+              <div class="small-12 cell text-center">
+                <button class="button expanded submit-button cta bold large" type="submit" id="submit-button"
+                        value="Send Message">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section th:if="${contacted}" class="info-box">
+    <div class="grid-container">
+      <div class="grid-x success-message">
+        <div class="small-12 medium-8 medium-offset-2 cell text-center"><h1 class="bold">Thanks for reaching out!</h1>
+          <span class="bold">Your message just showed up in our inbox. Talk to you soon!</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer" th:replace="fragment/index :: footer"></footer>
+<script src="/assets/js/main.js" async></script>
+</body>
+</html>

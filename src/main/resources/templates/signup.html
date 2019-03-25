@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="fragment/index :: head ('Anonymous crawler Create Account | ProxyCrawl')"></head>
+<body class="signup ">
+<header class="header-bar" th:replace="fragment/index :: header (false)"></header>
+<div th:if="${signup == null}" class="info-box">
+  <div class="grid-container">
+    <div class="grid-x mtxxl">
+      <div class="cell text-center">
+        <h2>Create your free account and <br>turn your crawling into incognito</h2>
+      </div>
+    </div>
+    <div class="grid-x mtxxl align-middle">
+      <div class="cell medium-6">
+        <div th:if="${warning != null && warning=='invalid'}" class="callout warning">
+          <h6>Invalid email</h6>
+          <p>Please use a different email address or <a href="/contact" title="Contact us">contact us</a> if the
+            problem persists.</p>
+        </div>
+        <div th:if="${coupon != null && coupon}" class="callout success">
+          <h6>Coupon Applied</h6>
+          <p>Coupon successfully applied, please create an account or <a href="/login" title="Login">login</a>.</p>
+        </div>
+        <div class="form-wrapper pam">
+          <form class="signup-form" id="signup-form" method="post" action="/signup" novalidate>
+            <div class="grid-x">
+              <div class="cell">
+                <label>Email Address
+                  <input id="email" type="email" name="email" required="true">
+                  <span class="form-error">Email is required</span>
+                  <span class="invalid-email hidden" id="invalid-email">This email host is not allowed</span>
+                </label>
+              </div>
+            </div>
+            <div class="grid-x">
+              <div class="cell">
+                <label>Password
+                  <input id="password" type="password" name="password" required>
+                  <span class="form-error">Password is required</span>
+                </label>
+              </div>
+            </div>
+            <div class="grid-x">
+              <div class="cell">
+                <label>Repeat password
+                  <input type="password" name="password-confirm" required="true" data-equalto="password">
+                  <span class="form-error">Password doesn't match</span>
+                </label>
+              </div>
+            </div>
+            <div class="grid-x">
+              <div class="cell">
+                <label>How many proxy requests do you expect to do per month?
+                  <select name="volume" required>
+                    <option value="">Please select</option>
+                    <option value="&lt; 1000">Less than 1,000</option>
+                    <option value="1,000 - 10,000">Between 1,000 and 10,000</option>
+                    <option value="10,000 - 100,000">Between 10,000 and 100,000</option>
+                    <option value="100,000 - 1,000,000">Between 100,000 and 1,000,000</option>
+                    <option value="1,000,000 - 10,000,000">Between 1,000,000 and 10,000,000</option>
+                    <option value="10,000,000 - 100,000,000">Between 10,000,000 and 100,000,000</option>
+                    <option value="&gt; 100,000,000">More than 100,000,000</option>
+                  </select>
+                  <span class="form-error">Please select one option</span>
+                </label>
+              </div>
+            </div>
+            <div class="grid-x">
+              <div class="cell">
+                <div class="js-cool-checkbox cool-checkbox">
+                  <span class="off active">No</span>
+                  <span class="on">Yes!</span>
+                  <input id="subscribe" type="checkbox" name="subscribe">
+                  <label>You would like to receive occasional offers and product updates (no spam)</label>
+                </div>
+              </div>
+            </div>
+            <div class="grid-x mtm">
+              <div class="cell">
+                <input id="signup-hidden" type="hidden" name="signup">
+                <input class="button large cta expanded bold" id="signup-button" type="submit" value="Create free account">
+                <small>By creating an account you agree to the
+                  <a href="/terms" rel="nofollow" target="_blank">terms and conditions</a>
+                  and the
+                  <a href="/privacy" rel="nofollow" target="_blank">privacy policy</a>
+                </small>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="show-for-medium medium-6 cell text-center">
+        <img src="/assets/images/incognito-app-d6a55646a6.png"
+             srcset="/assets/images/incognito-app-d6a55646a6.png 1x, /assets/images/incognito-app@2x-8f84558ce2.png 2x"
+             alt="Incognito proxy">
+      </div>
+    </div>
+  </div>
+  <img class="mtxxl" src="/assets/images/clouds-bottom-large-e8050fb410.png"
+       srcset="/assets/images/clouds-bottom-large-e8050fb410.png 1x, /assets/images/clouds-bottom-large@2x-f277d93776.png 2x"
+       alt="Cloud servers" width="100%">
+</div>
+<div th:if="${signup == 'success'}" class="info-box colored">
+  <div class="grid-container">
+    <div class="grid-x mtxxl">
+      <div class="cell text-center">
+        <h2>Thanks for signing up</h2>
+      </div>
+    </div>
+    <div class="grid-x mtxxl align-middle">
+      <div class="medium-offset-1 medium-5 cell text-center medium-text-left">
+        <p>Your account has been successfully created, please check your email to confirm your account and start using
+          ProxyCrawl</p>
+      </div>
+      <div class="show-for-medium medium-offset-1 medium-5 text-center">
+        <img src="/assets/images/crawler-cloud-servers-waiting-b438e1bf75.png" alt="Incognito proxy" width="356" height="343">
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer" th:replace="fragment/index :: footer"></footer>
+<script src="/assets/js/main.js" async></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="fragment/index :: head ('Anonymous crawler account login | ProxyCrawl')"></head>
+<body class="login ">
+<header class="header-bar" th:replace="fragment/index :: header (false)"></header>
+<div class="info-box">
+  <div class="grid-container">
+    <div class="grid-x mtxxl">
+      <div class="cell text-center"><h2>Login to your account</h2></div>
+    </div>
+    <div class="grid-x mtxxl align-middle">
+      <div class="medium-offset-4 medium-4 cell">
+        <div class="form-wrapper pam">
+          <form class="login-form" id="login-form" method="post" action="/login" novalidate>
+            <div class="grid-x">
+              <div class="cell">
+                <div th:if="${warning == 'invalid'}" class="callout warning">
+                  <h6>Invalid account</h6>
+                  <p>
+                    Sorry, your account details are wrong or your password expired, please request a password reset here
+                    <a href="/forgot-password" title="Reset password">(reset password)</a>
+                  </p>
+                </div>
+                <div class="callout success hidden">
+                  <h6>Account is activated</h6>
+                  <p>Your email is now confirmed</p>
+                </div>
+                <div class="callout success hidden">
+                  <h6>Password reset successfully</h6>
+                  <p>Use your new password to login</p>
+                </div>
+                <div class="callout alert hidden">
+                  <h6>Something went wrong</h6>
+                  <p>This link is expired or the account is inactive</p>
+                </div>
+                <div class="callout alert hidden">
+                  <h6>Account activation failed</h6>
+                  <p>Your account is already activated or confirmation token not found</p>
+                </div>
+                <label>
+                  Email Address
+                  <input type="email" name="email" required="true">
+                  <span class="form-error">Email is required</span>
+                </label>
+              </div>
+            </div>
+            <div class="grid-x">
+              <div class="cell">
+                <label>
+                  Password <a href="/forgot-password" title="Forgot password">(forgot password?)</a>
+                  <input id="password" type="password" name="password" required="true">
+                  <span class="form-error">Password is required</span>
+                </label>
+              </div>
+            </div>
+            <div class="grid-x mtm">
+              <div class="cell"><input class="button cta expanded large bold" type="submit" value="Login"></div>
+            </div>
+            <div class="grid-x mtm">
+              <div class="cell">
+                <span>Don't have an account? <a href="/signup?signup=login" title="Create a free account">Create one here</a>.</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="mtxxl" src="/assets/images/clouds-bottom-large-e8050fb410.png"
+       srcset="/assets/images/clouds-bottom-large-e8050fb410.png 1x, /assets/images/clouds-bottom-large@2x-f277d93776.png 2x"
+       alt="Cloud servers" width="100%">
+</div>
+<footer class="footer" th:replace="fragment/index :: footer"></footer>
+<script src="/assets/js/main.js" async></script>
+</body>
+</html>
